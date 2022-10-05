@@ -1,0 +1,56 @@
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app-006-build
+  labels:
+    app : app-006
+    team: acme-idp-001
+    build-namespace: app-006-build
+    size: small
+    environment: build
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: app-006-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app-006-dev
+  labels:
+    app : app-006
+    team: acme-idp-001
+    build-namespace: app-006-build
+    size: small
+    environment: dev
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: app-006-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app-006-qa
+  labels:
+    app : app-006
+    team: acme-idp-001
+    build-namespace: app-006-build
+    size: small
+    environment: qa
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: app-006-build
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app-006-prod
+  labels:
+    app : app-006
+    team: acme-idp-001
+    build-namespace: app-006-build
+    size: small
+    environment: prod
+    goldilocks.fairwinds.com/enabled: "true"
+    argocd.argoproj.io/managed-by: app-006-build
