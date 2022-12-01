@@ -7,4 +7,4 @@ metadata:
     size: small
     environments: build-dev-qa-prod
 spec:
-  owner: davgordo
+  owner: user:davgordo
