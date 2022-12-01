@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: app-020
+  description: app-020
+  labels:
+    size: small
+    environments: build-dev-qa-prod
+spec:
+  owner: default
